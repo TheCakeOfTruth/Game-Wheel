@@ -1,0 +1,248 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - mario",
+        "totalResults": "24570000000",
+        "searchTerms": "mario",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "412d6b6c16ed94115",
+        "searchType": "image"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - mario",
+        "totalResults": "24570000000",
+        "searchTerms": "mario",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "412d6b6c16ed94115",
+        "searchType": "image"
+      }
+    ]
+  },
+  "context": {
+    "title": "Game searcher"
+  },
+  "searchInformation": {
+    "searchTime": 0.216158,
+    "formattedSearchTime": "0.22",
+    "totalResults": "24570000000",
+    "formattedTotalResults": "24,570,000,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "The official home of Super Mario™ – Home",
+      "htmlTitle": "The official home of Super \u003cb\u003eMario\u003c/b\u003e™ – Home",
+      "link": "https://mario.nintendo.com/static/f350c31adcd6378b913f7660db299714/7e15c/mario.png",
+      "displayLink": "mario.nintendo.com",
+      "snippet": "The official home of Super Mario™ – Home",
+      "htmlSnippet": "The official home of Super \u003cb\u003eMario\u003c/b\u003e™ – Home",
+      "mime": "image/png",
+      "fileFormat": "image/png",
+      "image": {
+        "contextLink": "https://mario.nintendo.com/",
+        "height": 544,
+        "width": 244,
+        "byteSize": 221094,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlTL1VebjJvmiNx2oH473Py-0X0oyXdZbTbXo6u2rOAwguy8Ny3oUyL4o&s",
+        "thumbnailHeight": 133,
+        "thumbnailWidth": 60
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Mario - Wikipedia",
+      "htmlTitle": "\u003cb\u003eMario\u003c/b\u003e - Wikipedia",
+      "link": "https://upload.wikimedia.org/wikipedia/en/a/a9/MarioNSMBUDeluxe.png",
+      "displayLink": "en.wikipedia.org",
+      "snippet": "Mario - Wikipedia",
+      "htmlSnippet": "\u003cb\u003eMario\u003c/b\u003e - Wikipedia",
+      "mime": "image/png",
+      "fileFormat": "image/png",
+      "image": {
+        "contextLink": "https://en.wikipedia.org/wiki/Mario",
+        "height": 383,
+        "width": 250,
+        "byteSize": 122262,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdIPHGhHhkeHC-tggoifASg4MWd9mMIvf1S58ZxFq0BLqypPgyUn3auA&s",
+        "thumbnailHeight": 123,
+        "thumbnailWidth": 80
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Super Mario Bros. Hub | Mario Games | Games | Nintendo",
+      "htmlTitle": "Super \u003cb\u003eMario\u003c/b\u003e Bros. Hub | \u003cb\u003eMario\u003c/b\u003e Games | Games | Nintendo",
+      "link": "https://www.nintendo.com/eu/media/images/10_share_images/portals_3/2x1_SuperMarioHub_image1600w.jpg",
+      "displayLink": "www.nintendo.com",
+      "snippet": "Super Mario Bros. Hub | Mario Games | Games | Nintendo",
+      "htmlSnippet": "Super \u003cb\u003eMario\u003c/b\u003e Bros. Hub | \u003cb\u003eMario\u003c/b\u003e Games | Games | Nintendo",
+      "mime": "image/jpeg",
+      "fileFormat": "image/jpeg",
+      "image": {
+        "contextLink": "https://www.nintendo.com/en-gb/Games/Characters-hub/Super-Mario-Hub/Super-Mario-Bros-Hub-Mario-Games-627604.html",
+        "height": 800,
+        "width": 1600,
+        "byteSize": 136382,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvweoeMY_43xZNnxUjWIxXK9JoAXjn2yEbrijhEnA-dnv8ncL6rz1X5A&s",
+        "thumbnailHeight": 75,
+        "thumbnailWidth": 150
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Super Mario Bros. Movie (2023) - IMDb",
+      "htmlTitle": "The Super \u003cb\u003eMario\u003c/b\u003e Bros. Movie (2023) - IMDb",
+      "link": "https://m.media-amazon.com/images/M/MV5BOTJhNzlmNzctNTU5Yy00N2YwLThhMjQtZDM0YjEzN2Y0ZjNhXkEyXkFqcGdeQXVyMTEwMTQ4MzU5._V1_.jpg",
+      "displayLink": "www.imdb.com",
+      "snippet": "The Super Mario Bros. Movie (2023) - IMDb",
+      "htmlSnippet": "The Super \u003cb\u003eMario\u003c/b\u003e Bros. Movie (2023) - IMDb",
+      "mime": "image/jpeg",
+      "fileFormat": "image/jpeg",
+      "image": {
+        "contextLink": "https://www.imdb.com/title/tt6718170/",
+        "height": 1034,
+        "width": 700,
+        "byteSize": 209738,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg21fdhrdH3V3HyFRJDXcJY8pVUTDLKrlxgPOe0A421qWfRRKcZ2pKvZA&s",
+        "thumbnailHeight": 150,
+        "thumbnailWidth": 102
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The official home of Super Mario™ – About",
+      "htmlTitle": "The official home of Super \u003cb\u003eMario\u003c/b\u003e™ – About",
+      "link": "https://mario.nintendo.com/static/88dd0f6281674a77d052e46cc38c63f7/a320e/mario.png",
+      "displayLink": "mario.nintendo.com",
+      "snippet": "The official home of Super Mario™ – About",
+      "htmlSnippet": "The official home of Super \u003cb\u003eMario\u003c/b\u003e™ – About",
+      "mime": "image/png",
+      "fileFormat": "image/png",
+      "image": {
+        "contextLink": "https://mario.nintendo.com/about/",
+        "height": 780,
+        "width": 652,
+        "byteSize": 507359,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwIMSfgrMGUukATMskLpeoI4PXXBsKxeBhpcl0JkHHEuZ_LmciLwiOtMQ&s",
+        "thumbnailHeight": 142,
+        "thumbnailWidth": 119
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Super Mario Bros. Hub | Mario Games | Games | Nintendo",
+      "htmlTitle": "Super \u003cb\u003eMario\u003c/b\u003e Bros. Hub | \u003cb\u003eMario\u003c/b\u003e Games | Games | Nintendo",
+      "link": "https://www.nintendo.com/eu/media/images/08_content_images/others_2/characterhubs/supermariohub/MarioHub_Overview_Mario_sideimg_mario.png",
+      "displayLink": "www.nintendo.com",
+      "snippet": "Super Mario Bros. Hub | Mario Games | Games | Nintendo",
+      "htmlSnippet": "Super \u003cb\u003eMario\u003c/b\u003e Bros. Hub | \u003cb\u003eMario\u003c/b\u003e Games | Games | Nintendo",
+      "mime": "image/png",
+      "fileFormat": "image/png",
+      "image": {
+        "contextLink": "https://www.nintendo.com/en-gb/Games/Characters-hub/Super-Mario-Hub/Super-Mario-Bros-Hub-Mario-Games-627604.html",
+        "height": 503,
+        "width": 226,
+        "byteSize": 143800,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMptW2EYMwGgskzyP6dczft63_0cAMsq5IA-ESVZrHEoos7KgYNv7d5IE&s",
+        "thumbnailHeight": 130,
+        "thumbnailWidth": 58
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The official home of Super Mario™ – Characters",
+      "htmlTitle": "The official home of Super \u003cb\u003eMario\u003c/b\u003e™ – Characters",
+      "link": "https://mario.nintendo.com/static/a5f7fe49f4862aa68eaba347ee05c336/02be2/mario.png",
+      "displayLink": "mario.nintendo.com",
+      "snippet": "The official home of Super Mario™ – Characters",
+      "htmlSnippet": "The official home of Super \u003cb\u003eMario\u003c/b\u003e™ – Characters",
+      "mime": "image/png",
+      "fileFormat": "image/png",
+      "image": {
+        "contextLink": "https://mario.nintendo.com/characters/",
+        "height": 853,
+        "width": 382,
+        "byteSize": 487807,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuMiyry1_8vD8pbunqABXL-Xf3nbvqhjdx7etl2ghFM_e10s__Gduq1A&s",
+        "thumbnailHeight": 145,
+        "thumbnailWidth": 65
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Amazon.com: Super Mario Nintendo 4\" Figure 2 Pack: Mario & Peach ...",
+      "htmlTitle": "Amazon.com: Super \u003cb\u003eMario\u003c/b\u003e Nintendo 4&quot; Figure 2 Pack: \u003cb\u003eMario\u003c/b\u003e &amp; Peach ...",
+      "link": "https://m.media-amazon.com/images/I/61aA7u8W5UL._AC_UF894,1000_QL80_.jpg",
+      "displayLink": "www.amazon.com",
+      "snippet": "Amazon.com: Super Mario Nintendo 4\" Figure 2 Pack: Mario & Peach ...",
+      "htmlSnippet": "Amazon.com: Super \u003cb\u003eMario\u003c/b\u003e Nintendo 4&quot; Figure 2 Pack: \u003cb\u003eMario\u003c/b\u003e &amp; Peach ...",
+      "mime": "image/jpeg",
+      "fileFormat": "image/jpeg",
+      "image": {
+        "contextLink": "https://www.amazon.com/SUPER-MARIO-Nintendo-Figure-Pack/dp/B0B9NCBY9R",
+        "height": 515,
+        "width": 894,
+        "byteSize": 29020,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuRrfkWo9jni1fjeSZ32TfWv130UlfmCkMSK0WUB-7ve9e-OyjhvHM9ow&s",
+        "thumbnailHeight": 84,
+        "thumbnailWidth": 146
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The official home of Super Mario™ – Home",
+      "htmlTitle": "The official home of Super \u003cb\u003eMario\u003c/b\u003e™ – Home",
+      "link": "https://mario.nintendo.com/static/d783068682f98d6cfec666c747a27793/d6e64/mario.png",
+      "displayLink": "mario.nintendo.com",
+      "snippet": "The official home of Super Mario™ – Home",
+      "htmlSnippet": "The official home of Super \u003cb\u003eMario\u003c/b\u003e™ – Home",
+      "mime": "image/png",
+      "fileFormat": "image/png",
+      "image": {
+        "contextLink": "https://mario.nintendo.com/",
+        "height": 462,
+        "width": 258,
+        "byteSize": 29439,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1TSpW0zK0ktjMkmdMojtGVIF5zryHJdKSEi75eFeJZxNdC9fwn_Kn_g&s",
+        "thumbnailHeight": 128,
+        "thumbnailWidth": 71
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Mario | WarioWiki | Fandom",
+      "htmlTitle": "\u003cb\u003eMario\u003c/b\u003e | WarioWiki | Fandom",
+      "link": "https://static.wikia.nocookie.net/wario/images/a/af/MvDK_NS_Mario.png/revision/latest?cb=20240217161742",
+      "displayLink": "wario.fandom.com",
+      "snippet": "Mario | WarioWiki | Fandom",
+      "htmlSnippet": "\u003cb\u003eMario\u003c/b\u003e | WarioWiki | Fandom",
+      "mime": "image/",
+      "fileFormat": "image/",
+      "image": {
+        "contextLink": "https://wario.fandom.com/wiki/Mario",
+        "height": 708,
+        "width": 305,
+        "byteSize": 234272,
+        "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmwFJ0IHJCGL6WveqLjppomnKQoqEdkDQFIt4bfI8aoGUUZgTQSZb7Kiw&s",
+        "thumbnailHeight": 140,
+        "thumbnailWidth": 60
+      }
+    }
+  ]
+}
