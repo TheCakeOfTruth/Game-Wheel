@@ -2,7 +2,7 @@ package code.games;
 
 import java.awt.image.BufferedImage;
 
-import code.util.Util;
+import code.util.WebUtil;
 
 public class SteamGame extends Game {
     // Stores the Steam appid
@@ -13,7 +13,7 @@ public class SteamGame extends Game {
 
     // Gets the header image from the steam store page
     public BufferedImage getImage() {
-        return Util.getImageFromURL("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/" + appid + "/header.jpg");
+        return WebUtil.getImageFromURL("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/" + appid + "/header.jpg");
     }
 
     // Getters/setters

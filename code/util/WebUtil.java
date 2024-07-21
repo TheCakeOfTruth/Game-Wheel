@@ -7,16 +7,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Random;
 
 import javax.imageio.ImageIO;
 
-public class Util {
-    private static Random rand = new Random();
-    public static int randInt(int max) {
-        return rand.nextInt(max);
-    }
-
+public class WebUtil {
     // Returns the JSON or HTML response from a URL as a String
     public static String getResponse(String url) {
         try{

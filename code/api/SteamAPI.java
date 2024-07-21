@@ -6,7 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONObject; 
 
 import code.games.SteamGame;
-import code.util.Util;
+import code.util.WebUtil;
 import code.Config;
 
 public class SteamAPI {
@@ -24,7 +24,7 @@ public class SteamAPI {
 
     private void fetchSteamGames() {
         // Get data from API
-        String str = Util.getResponse("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + apiKey + "&steamid=" + steamID + "&include_appinfo=true&format=json");
+        String str = WebUtil.getResponse("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + apiKey + "&steamid=" + steamID + "&include_appinfo=true&format=json");
 
         // Parse the JSON API response into SteamGame objects
         games = new ArrayList<>();

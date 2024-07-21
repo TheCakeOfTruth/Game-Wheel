@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
 
-import code.util.Util;
+import code.util.WebUtil;
 
 public class GamesDBScraper {
     // Singleton instance
@@ -32,7 +32,7 @@ public class GamesDBScraper {
     // Populates the platform map
     public void fetchPlatformMap() {
         // Get base search HTML & initialize map
-        String result = Util.getResponse(siteURL);
+        String result = WebUtil.getResponse(siteURL);
         platforms = new TreeMap<>();
 
         // For all options,
@@ -70,7 +70,7 @@ public class GamesDBScraper {
     // Gets the URL to the cover image of the game
     public String getCoverImageURL(String gameName, String platformName) {
         // Get the search page
-        String result = Util.getResponse(siteURL + "?name=" + URLEncoder.encode(gameName, StandardCharsets.UTF_8) + "&platform_id%5B%5D=" + tryPlatform(platformName));
+        String result = WebUtil.getResponse(siteURL + "?name=" + URLEncoder.encode(gameName, StandardCharsets.UTF_8) + "&platform_id%5B%5D=" + tryPlatform(platformName));
 
         // Grab the img class of the first result
         String url = null;
