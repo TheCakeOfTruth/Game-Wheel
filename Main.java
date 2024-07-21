@@ -15,7 +15,7 @@ public class Main {
         //System.out.println(SteamAPI.getInstance().getGames());
         //ImageIO.write(new PhysicalGame("Undertale", "Nintendo Switch").getImage(), "png", "test.png");
         File file = new File("test.png");
-        ImageIO.write(new PhysicalGame("Undertale", "Sony Playstation 4").getImage(), "png", file);
+        ImageIO.write(new PhysicalGame("My Stop Smoking Coach", "Nintendo DS").getImage(), "png", file);
         Desktop.getDesktop().open(file);
 
         // Sample program: gets the link to the header image of a random game in my steam library

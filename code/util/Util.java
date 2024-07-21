@@ -5,17 +5,23 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Random;
 
 import javax.imageio.ImageIO;
 
 public class Util {
+    private static Random rand = new Random();
+    public static int randInt(int max) {
+        return rand.nextInt(max);
+    }
+
     // Returns the JSON or HTML response from a URL as a String
     public static String getResponse(String url) {
         try{
             // Open the connection and begin reading
-            HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+            HttpURLConnection connection = (HttpURLConnection) new URI(url).toURL().openConnection();
             BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
             // Build the response into the String
@@ -30,8 +36,8 @@ public class Util {
             // Return
             return response;
         }
-        catch(MalformedURLException e) {/* SOMETHING WRONG WITH URL */}
-        catch(IOException e) {/* PROBLEM READING THE RESPONSE */}
+        catch (URISyntaxException e) {/* SOMETHING WRONG WITH URL */}
+        catch (IOException e) {/* PROBLEM READING THE RESPONSE */}
 
         return null;
     }
@@ -40,9 +46,9 @@ public class Util {
     public static BufferedImage getImageFromURL(String url) {
         if (url != null) {
             try {
-                return ImageIO.read(new URL(url));
+                return ImageIO.read(new URI(url).toURL());
             }
-            catch(MalformedURLException e) {/* SOMETHING WRONG WITH URL */}
+            catch(URISyntaxException e) {/* SOMETHING WRONG WITH URL */}
             catch(IOException e) {/* CAN'T WRITE TO IMAGE */}
         }
         
