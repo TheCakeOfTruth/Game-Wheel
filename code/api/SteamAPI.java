@@ -8,13 +8,14 @@ import org.json.JSONObject;
 import code.games.SteamGame;
 import code.util.WebUtil;
 import code.Config;
+import code.Environment;
 
 public class SteamAPI {
     // Singleton instance
     private static SteamAPI instance;
 
     // Default variables
-    private String apiKey = System.getenv("STEAM_API_KEY");
+    private String apiKey = Environment.getInstance().get("STEAM_API_KEY");
     private String steamID = Config.getInstance().get("steamUserID");
     private ArrayList<SteamGame> games; 
 
@@ -25,6 +26,7 @@ public class SteamAPI {
     private void fetchSteamGames() {
         // Get data from API
         String str = WebUtil.getResponse("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + apiKey + "&steamid=" + steamID + "&include_appinfo=true&format=json");
+        if (str == null) {return;}
 
         // Parse the JSON API response into SteamGame objects
         games = new ArrayList<>();
@@ -43,9 +45,4 @@ public class SteamAPI {
     public void setSteamID(String steamID) {this.steamID = steamID;}
     public String getSteamID() {return steamID;}
     public ArrayList<SteamGame> getGames() {if(games == null) {fetchSteamGames();}; return games;}
-
-    public static void main(String[] args) {
-        getInstance().getGames();
-        //System.out.println(getInstance().getGames());
-    }
 }

@@ -3,23 +3,23 @@ import java.util.TreeMap;
 
 import code.util.Parser;
 
-public class Config {
+public class Environment {
     // Singleton instance
-    private static Config instance;
+    private static Environment instance;
 
     // filePath
-    private String filePath = "config.cfg";
+    private String filePath = ".env";
 
     // Variable map
-    private TreeMap<String, String> configVars;
+    private TreeMap<String, String> environmentVars;
 
     // Private constructor & public getter
-    private Config() {}
-    public static Config getInstance() {if(instance == null) {instance = new Config();}; return instance;}
+    private Environment() {}
+    public static Environment getInstance() {if(instance == null) {instance = new Environment();}; return instance;}
     
     // Initializes the variable map
-    private void fetchConfigVars() {
-        configVars = Parser.parse(filePath);
+    private void fetchEnvironmentVars() {
+        environmentVars = Parser.parse(filePath);
     }
 
     // Variable getters/setters
@@ -29,8 +29,8 @@ public class Config {
     // Get the value of a config variable
     public String get(String key) {
         // Initialize the map if needed
-        if(configVars == null) {fetchConfigVars();}
+        if(environmentVars == null) {fetchEnvironmentVars();}
         // Return the desired value
-        return configVars.get(key);
+        return environmentVars.get(key);
     }
 }
