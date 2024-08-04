@@ -62,10 +62,15 @@ public class Window extends JFrame {
             public void run() {
                 Window window = new Window();
 
-                Wheel wheeltester = new Wheel(window.getPanel());
-                wheeltester.setSize(window.width, window.height);
-                window.add(wheeltester);
-                wheeltester.setVisible(true);
+                Wheel wheel = new Wheel(window.getPanel());
+                double r = Math.min((double) window.width / 2, (double) window.height / 2);
+                
+                wheel.setR(r);
+                wheel.setLocation((window.width - wheel.getWidth()) / 2, (window.height - wheel.getHeight()) / 2);
+                wheel.repaint();
+
+                // wheel.setSize(window.width, window.height);
+                window.add(wheel);
             }
         });
     }

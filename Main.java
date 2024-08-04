@@ -12,11 +12,12 @@ import code.games.SteamGame;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        //System.out.println(SteamAPI.getInstance().getGames());
+        System.out.println(SteamAPI.getInstance().getGames());
         //ImageIO.write(new PhysicalGame("Undertale", "Nintendo Switch").getImage(), "png", "test.png");
-        File file = new File("test.png");
-        ImageIO.write(new PhysicalGame("My Stop Smoking Coach", "Nintendo DS").getImage(), "png", file);
-        Desktop.getDesktop().open(file);
+
+        // File file = new File("test.png");
+        // ImageIO.write(new PhysicalGame("My Stop Smoking Coach", "Nintendo DS").getImage(), "png", file);
+        // Desktop.getDesktop().open(file);
 
         // Sample program: gets the link to the header image of a random game in my steam library
 
