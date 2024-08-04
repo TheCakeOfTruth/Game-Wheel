@@ -3,21 +3,21 @@ package code.api;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
-import org.json.JSONObject; 
+import org.json.JSONObject;
 
+import code.Main;
+import code.games.Game;
 import code.games.SteamGame;
 import code.util.WebUtil;
-import code.Config;
-import code.Environment;
 
 public class SteamAPI {
     // Singleton instance
     private static SteamAPI instance;
 
     // Default variables
-    private String apiKey = Environment.getInstance().get("STEAM_API_KEY");
-    private String steamID = Config.getInstance().get("steamUserID");
-    private ArrayList<SteamGame> games; 
+    private String apiKey = Main.env.get("STEAM_API_KEY");
+    private String steamID = Main.config.get("steamUserID");
+    private ArrayList<Game> games; 
 
     // Private constructor & public getter
     private SteamAPI() {}
@@ -44,5 +44,5 @@ public class SteamAPI {
     public String getApiKey() {return apiKey;}
     public void setSteamID(String steamID) {this.steamID = steamID;}
     public String getSteamID() {return steamID;}
-    public ArrayList<SteamGame> getGames() {if(games == null) {fetchSteamGames();}; return games;}
+    public ArrayList<Game> getGames() {if(games == null) {fetchSteamGames();}; return games;}
 }

@@ -1,0 +1,1 @@
+- Pre-render slices as their own components attached to the Wheel? This should speed up the animation significantly, if they don't need to be redrawn every frame

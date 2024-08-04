@@ -1,3 +1,4 @@
+package code;
 import java.awt.Desktop;
 import java.awt.image.RenderedImage;
 import java.io.File;
@@ -9,8 +10,12 @@ import javax.imageio.ImageIO;
 import code.api.SteamAPI;
 import code.games.PhysicalGame;
 import code.games.SteamGame;
+import code.util.FileParser;
 
 public class Main {
+    public static FileParser config = new FileParser("config.cfg");
+    public static FileParser env = new FileParser(".env");
+
     public static void main(String[] args) throws Exception {
         System.out.println(SteamAPI.getInstance().getGames());
         //ImageIO.write(new PhysicalGame("Undertale", "Nintendo Switch").getImage(), "png", "test.png");
